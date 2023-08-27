@@ -15,6 +15,12 @@
         background-attachment: fixed;
     }*/
 
+    @media screen and (min-width: 1024px) {
+        background-image: url(../img/pattern.png), url(../img/pattern1.png);
+        background-position: -20% 50%, 120% 50%;
+        background-repeat: no-repeat;
+    }
+
     
   
 }
