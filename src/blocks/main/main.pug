@@ -1,0 +1,44 @@
+mixin main(modifier)
+  main.main&attributes(attributes)
+    .main__content 
+      h1.main__title-one Закончились кредиты? 
+      +slider
+      button(type="botton").main__btn-mobile Try now
+      .main__discount 
+        h2.main__title Скидка 40%
+        p.main__text Предложение действует в течении:
+        .main__timer(id="timer")
+          span(id="hours")
+          span.main__dot :
+          span(id="minutes")
+          span.main__dot :
+          span(id="seconds")
+      ul.main__list 
+        li.main__item 
+          p.main__price 50
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+        li.main__item 
+          p.main__price 150
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+        li.main__item 
+          p.main__price 300
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+        li.main__item 
+          p.main__price 500
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+        li.main__item 
+          p.main__price 1000
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+        li.main__item.main__item--big 
+          p.main__price 1000
+            include img/cr.svg
+          button(type="button").main__btn Buy now
+      .main__checkbox
+        input(type="checkbox" checked id="checkbox_1") 
+        label(for="checkbox_1").main__small-text By clicking Checkbox you agree and accept our&nbsp;<a href="#!" class="main__small-link">Privacy Policy</a>, and&nbsp;<a href="#!" class="main__small-link">Terms of use</a>
+      +premium

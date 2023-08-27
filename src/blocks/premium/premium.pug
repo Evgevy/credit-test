@@ -1,0 +1,29 @@
+mixin premium(modifier)
+  .premium&attributes(attributes)
+    .premium__images 
+      img(src="img/gold.svg" alt="Иконка алмаза").premium__img
+    ul.premium__list 
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--one
+          include img/com.svg
+          p.premium__text Отправлять сообщения 
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--two
+          include img/eye.svg
+          p.premium__text Просматривать скрытые фото
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--three
+          include img/present.svg
+          p.premium__text Оплачивать подарки
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--four
+          include img/heart.svg
+          p.premium__text Пользоваться другими премиум функциями
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--five
+          include img/com.svg
+          p.premium__text Просматривать скрытые фото
+      li.premium__item 
+        a(href="#!").premium__link.premium__link--six
+          include img/mech.svg
+          p.premium__text Просматривать скрытые фото

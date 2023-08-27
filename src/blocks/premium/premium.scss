@@ -1,0 +1,125 @@
+.premium {
+    &__images {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 10px;
+        width: 280px;
+        gap: 0 10px;
+        &--five,
+        &--six {
+            display: none;
+        }
+    }
+
+    &__text {
+        color: #9564AA;
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 116%;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        min-height: 305px;
+       
+        &__images {
+            width: 130px;
+            height: 107px;
+            margin: 0 auto;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+       
+        &__link {
+            flex-direction: column;
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 4px 0;
+            margin-bottom: 0;
+            width: 108px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+            &--one {
+                top: 12%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+            }
+            &--two {
+                top: 50%;
+                right: 29%;
+                transform: translate(50%, -50%);
+            }
+            &--three {
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+            }
+            &--four {
+                top: 14%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+            }
+            &--five {
+                display: flex;
+                bottom: 8%;
+                left: 40%;
+                transform: translate(-50%, 50%);
+            }
+            &--six {
+                display: flex;
+                bottom: 9%;
+                left: 62%;
+                transform: translate(-50%, 50%);
+            }
+
+        }
+
+        &__text {
+            width: 110px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 950px) {
+        &__link {
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+            &--two {
+                top: 50%;
+                right: 33%;
+                transform: translate(50%, -50%);
+            }
+            &--three {
+                top: 50%;
+                left: 33%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &__link:hover {
+            svg {
+                path {
+                    fill: #FFCF2D;
+                }
+            }
+        }
+    }
+}

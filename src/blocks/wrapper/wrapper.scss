@@ -1,0 +1,20 @@
+.wrapper {
+    &__content {
+        max-width: 1220px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        display: flex;
+        gap: 0 30px;
+    }
+
+    /*@media screen and (min-width: 1024px) {
+        background-image: url(../img/pattern.png), url(../img/pattern1.png);
+        background-position: -20% 220%, calc(200px + 100%) -220%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }*/
+
+    
+  
+}

@@ -1,0 +1,37 @@
+mixin sidebar(modifier)
+  aside.sidebar&attributes(attributes)
+    .sidebar__content 
+      .sidebar__present 
+        img(src="img/photo.png").sidebar__img
+        .sidebar__info
+          h3.sidebar__title Test2412
+          button(type="button").sidebar__btn GET PREMIUM
+      ul.sidebar__list 
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon1.svg
+          a(href="#!").sidebar__text Profile
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon2.svg
+          a(href="#!").sidebar__text My photos
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon3.svg
+          a(href="#!").sidebar__text Messages
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon4.svg
+          a(href="#!").sidebar__text Favorites
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon5.svg
+          a(href="#!").sidebar__text Guests
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon6.svg
+          a(href="#!").sidebar__text Settings
+        li.sidebar__item
+          a(href="#!").sidebar__link 
+            include img/icon7.svg
+          a(href="#!").sidebar__text Log out
